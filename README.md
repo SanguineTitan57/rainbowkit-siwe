@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 Before trying to connecting your wallet, ensure that the backend is also running!.
-Custom Backend: []
+Custom Backend: [https://github.com/SanguineTitan57/backend2.git]
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
