@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true,
+    webpack: (config) => {
+      config.resolve.fallback = { 
+        fs: false, 
+        net: false, 
+        tls: false 
+      };
+  
+      config.externals.push("pino-pretty", "loki.js", "encoding");
+  
+      return config;
+    },
+  };
+  
+  export default nextConfig;
+  
